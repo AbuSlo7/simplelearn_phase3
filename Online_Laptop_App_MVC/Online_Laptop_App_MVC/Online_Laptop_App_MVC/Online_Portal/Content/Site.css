@@ -1,0 +1,192 @@
+﻿body {
+    padding-top: 0;
+    padding-bottom: 0;
+}
+
+/* Set padding to keep content from hitting the edges */
+.body-content {
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+/* Override the default bootstrap behavior where horizontal description lists 
+   will truncate terms that are too long to fit in the left column 
+*/
+.dl-horizontal dt {
+    white-space: normal;
+}
+
+
+.login-wrapper {
+    margin: auto
+}
+
+.register-wrapper {
+    margin: auto
+}
+
+products-wrapper .card {
+    border: none;
+    border-radius: 10px
+}
+
+
+.img-container {
+    position: relative;
+    height: 265px;
+}
+
+    .img-container .first {
+        position: absolute;
+        width: 100%
+    }
+
+    .img-container img {
+        border-top-left-radius: 5px;
+        border-top-right-radius: 5px;
+        height: 100%;
+        width: 100%;
+    }
+
+.product-detail-container {
+    padding: 10px
+}
+
+.brand-name {
+    color: #a9a6a6
+}
+
+header {
+    height: 65vh;
+    width: 100%;
+    color: white;
+    font: bold 3.5em/2em monospace;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(to top, rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url(https://thumbs.dreamstime.com/b/laptop-computer-banner-background-above-black-wood-37921311.jpg);
+}
+
+.filter-wrapper {
+    padding: 33px;
+    border: 1px solid lightgray;
+    border-radius: 20px;
+    margin: 0 0 28px 25px;
+}
+
+    .filter-wrapper form {
+        width: 80%;
+        margin: auto;
+    }
+
+@media only screen and (min-device-width: 480px) and (max-device-width: 2310px) {
+    header {
+        height: 65vh;
+        width: 100%;
+        color: white;
+        font: bold 3.5em/2em monospace;
+        display: flex;
+        text-align: center;
+        justify-content: center;
+        align-items: center;
+        background: linear-gradient(to top, rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url(https://thumbs.dreamstime.com/b/laptop-computer-banner-background-above-black-wood-37921311.jpg);
+        background-repeat: round
+    }
+}
+
+.product-wrapper {
+    padding: 33px;
+    border: 1px solid lightgray;
+    border-radius: 20px;
+}
+
+
+
+
+
+
+.single_product {
+    padding-top: 66px;
+    padding-bottom: 140px;
+    background-color: #e5e5e5;
+    margin-top: 0px;
+    padding: 17px
+}
+
+.product_name {
+    font-size: 20px;
+    font-weight: 400;
+    margin-top: 0px
+}
+
+.badge {
+    display: inline-block;
+    padding: 0.50em .4em;
+    font-size: 75%;
+    font-weight: 700;
+    line-height: 1;
+    text-align: center;
+    white-space: nowrap;
+    vertical-align: baseline;
+    border-radius: .25rem
+}
+
+.product-rating {
+    margin-top: 10px
+}
+
+.rating-review {
+    color: #5b5b5b
+}
+
+.product_price {
+    display: inline-block;
+    font-size: 30px;
+    font-weight: 500;
+    margin-top: 9px;
+    clear: left
+}
+
+.singleline {
+    margin-top: 1rem;
+    margin-bottom: .40rem;
+    border: 0;
+    border-top: 1px solid rgba(0, 0, 0, .1)
+}
+
+.product_info {
+    color: #4d4d4d;
+    display: inline-block
+}
+
+.product_description {
+    padding-left: 0px
+}
+
+
+.shop-button {
+    height: 47px
+}
+
+.image_selected {
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: calc(100% + 15px);
+    height: 525px;
+    -webkit-transform: translateX(-15px);
+    -moz-transform: translateX(-15px);
+    -ms-transform: translateX(-15px);
+    -o-transform: translateX(-15px);
+    transform: translateX(-15px);
+    border: solid 1px #e8e8e8;
+    box-shadow: 0px 0px 0px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    padding: 15px
+}

@@ -1,0 +1,21 @@
+{
+  "Version": 1,
+  "ProjectMap": {
+    "73e2ce4b-c46b-48de-bc46-de9095366d82": {
+      "ProjectGuid": "73e2ce4b-c46b-48de-bc46-de9095366d82",
+      "DisplayName": "DataAccessLayer",
+      "ColorIndex": 0
+    },
+    "696d83f4-7c2d-445c-ab38-d41dd8e8f696": {
+      "ProjectGuid": "696d83f4-7c2d-445c-ab38-d41dd8e8f696",
+      "DisplayName": "01Online_Portal",
+      "ColorIndex": 1
+    },
+    "81b79425-09a0-4214-8cfe-d53c1aede62b": {
+      "ProjectGuid": "81b79425-09a0-4214-8cfe-d53c1aede62b",
+      "DisplayName": "BussinessAccessLayer",
+      "ColorIndex": 2
+    }
+  },
+  "NextColorIndex": 3
+}

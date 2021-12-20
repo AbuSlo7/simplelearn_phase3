@@ -1,0 +1,50 @@
+﻿@model IEnumerable<Online_Portal.Models.Product>
+@{
+    ViewBag.Title = "Products";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<div class="text-center">
+    <h2>Products</h2>
+</div>
+
+<div class="card">
+    <div class="card-header">
+        <h4>Products</h4>
+    </div>
+    <div class="card-body">
+        <table class="table">
+            <thead>
+                <tr>
+                    <th scope="col">Image</th>
+                    <th scope="col">Name</th>
+                    <th scope="col">Price</th>
+                    <th scope="col">Processor</th>
+                    <th scope="col">Available</th>
+                    <th scope="col">Brand Name</th>
+                    <th scope="col">Category</th>
+                    <th scope="col">Action</th>
+                </tr>
+            </thead>
+            <tbody>
+                @{
+                    foreach (var item in Model)
+                    {
+                        <tr>
+                            <td><img style="height:60px;width:60px" src="@item.MainImg.Replace("~","")" /></td>
+                            <td>@item.ProductName</td>
+                            <td>$@item.Price</td>
+                            <td>@item.Processor</td>
+                            <td>@(item.IsAvaliable?"Available": "Not Available")</td>
+                            <td>@item.BrandName</td>
+                            <td>@item.CategoryName</td>
+                            <td><a href="/admin/EditProduct?prodId=@item.ProductId">Edit</a></td>
+                        </tr>
+                    }
+                }
+
+            </tbody>
+        </table>
+    </div>
+</div>
+

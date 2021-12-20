@@ -1,0 +1,67 @@
+﻿@model Online_Portal.Models.Product
+@{
+    ViewBag.Title = "AddProduct";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<div class="text-center">
+    <h4>Add Product</h4>
+</div>
+
+<div class="card register-wrapper col-md-7 col-sm-12">
+    <div class="card-header">
+        <h4>Enter info</h4>
+    </div>
+    <div class="card-body">
+        <form action="/admin/AddProduct" method="post" enctype="multipart/form-data">
+            <div class="mb-3">
+                <label>Product Name</label>
+                @Html.EditorFor(p => p.ProductName, new { htmlAttributes = new { @class = "form-control", required = "required" } })
+            </div>
+            <div class="mb-3">
+                <label>Product Price</label>
+                @Html.EditorFor(p => p.Price, new { htmlAttributes = new { @class = "form-control", required = "required", type = "number" } })
+            </div>
+            <div class="mb-3">
+                <label>Screen Size</label>
+                @Html.EditorFor(p => p.ScreenSize, new { htmlAttributes = new { @class = "form-control" } })
+            </div>
+            <div class="mb-3 row">
+                <div class="col-md-6">
+                    <label>Color</label>
+                    @Html.EditorFor(p => p.Color, new { htmlAttributes = new { @class = "form-control" } })
+                </div>
+                <div class="col-md-6">
+                    <label>Processor</label>
+                    @Html.EditorFor(p => p.Processor, new { htmlAttributes = new { @class = "form-control" } })
+                </div>
+            </div>
+            <div class="mb-3">
+                <label>Available</label>
+                <select name="IsAvaliable" class="form-control" required>
+                    <option value="true">Available</option>
+                    <option value="false">Not Available</option>
+                </select>
+            </div>
+            <div class="mb-3">
+                <label>Brand Name</label>
+                @Html.EditorFor(p => p.BrandName, new { htmlAttributes = new { @class = "form-control" } })
+            </div>
+            <div class="mb-3">
+                <label>Category</label>
+                @Html.DropDownListFor(p => p.CategoryId, new SelectList(ViewBag.categories, "Id", "Name"), "--Select Category--", new { @class = "form-control", required = "required" })
+            </div>
+            <div class="mb-3">
+                <label>Description</label>
+                @Html.TextAreaFor(p => p.Description, new { @class = "form-control" })
+            </div>
+
+            <div class="mb-3">
+                <label>Upload image</label>
+                <input required type="file" name="images" class="form-control" />
+            </div>
+            <button type="submit" class="btn btn-outline-primary">Save</button>
+        </form>
+    </div>
+</div>
+

@@ -1,0 +1,76 @@
+﻿@model IEnumerable<Online_Portal.Models.Product>
+
+@{
+    ViewBag.Title = "Cart";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+
+<div class="text-center mb-5">
+    <h2>Cart</h2>
+</div>
+<div class="cart-wrapper">
+    <div class="card">
+        <div class="card-header">Cart</div>
+        <div class="card-body">
+            @using (Html.BeginForm("Index", "Order", FormMethod.Post))
+            {
+                <table class="table">
+                    <tr>
+                        <th>
+                            <label>Product Name</label>
+                        </th>
+                        <th>
+                            <label>Price</label>
+                        </th>
+                        <th>
+                            <label>Brand</label>
+                        </th>
+                        <th>
+                            <label>Color</label>
+                        </th>
+                        <th>
+                            <label>Screen Size</label>
+                        </th>
+                        <th>
+                            <label>Category</label>
+                        </th>
+                        <th></th>
+                    </tr>
+
+                    @foreach (var item in Model)
+                    {
+                        <tr>
+                            <td>
+                                @Html.DisplayFor(modelItem => item.ProductName)
+                            </td>
+                            <td>
+                                @Html.DisplayFor(modelItem => item.Price)
+                            </td>
+                            <td>
+                                @Html.DisplayFor(modelItem => item.BrandName)
+                            </td>
+                            <td>
+                                @Html.DisplayFor(modelItem => item.Color)
+                            </td>
+                            <td>
+                                @Html.DisplayFor(modelItem => item.ScreenSize)
+                            </td>
+                            <td>
+                                @Html.DisplayFor(modelItem => item.CategoryName)
+                            </td>
+                            <td>
+                                @Html.ActionLink("Remove", "Remove", new { id = item.ProductId })
+                            </td>
+                        </tr>
+                    }
+
+                </table>
+                <div class="form-group">
+                    <button type="submit" class="btn btn-outline-info">Place Order</button>
+                </div>
+            }
+
+        </div>
+    </div>
+</div>

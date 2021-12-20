@@ -1,0 +1,139 @@
+﻿@model IEnumerable<Online_Portal.Models.Product>
+@{
+    ViewBag.Title = "Index";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+<link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
+<style>
+    @@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800&display=swap");
+
+    .cart {
+        height: 100vh
+    }
+
+    .progresses {
+        display: flex;
+        align-items: center
+    }
+
+    .line {
+        width: 76px;
+        height: 6px;
+        background: #63d19e
+    }
+
+    .steps {
+        display: flex;
+        background-color: #63d19e;
+        color: #fff;
+        font-size: 12px;
+        width: 30px;
+        height: 30px;
+        align-items: center;
+        justify-content: center;
+        border-radius: 50%
+    }
+
+    .check1 {
+        display: flex;
+        background-color: #63d19e;
+        color: #fff;
+        font-size: 17px;
+        width: 60px;
+        height: 60px;
+        align-items: center;
+        justify-content: center;
+        border-radius: 50%;
+        margin-bottom: 10px
+    }
+
+    .invoice-link {
+        font-size: 15px
+    }
+
+    .order-button {
+        height: 50px
+    }
+
+    .background-muted {
+        background-color: #fafafc
+    }
+</style>
+
+<div class="container">
+    <div class="row d-flex cart align-items-center justify-content-center">
+        <div class="col-md-10">
+            <div class="card">
+                <div class="d-flex justify-content-center border-bottom">
+                    <div class="p-3">
+                        <div class="progresses">
+                            <div class="steps"> <span><i class="fa fa-check"></i></span> </div> <span class="line"></span>
+                            <div class="steps"> <span><i class="fa fa-check"></i></span> </div> <span class="line"></span>
+                            <div class="steps"> <span class="font-weight-bold">3</span> </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row g-0">
+                    <div class="col-md-6 border-right p-5">
+                        <div class="text-center order-details">
+                            <div class="d-flex justify-content-center mb-5 flex-column align-items-center">
+                                <span class="check1"><i class="fa fa-check"></i></span> <span class="font-weight-bold">Order Confirmed</span> <small class="mt-2">Your order will go to you soon</small>
+                                <small class="mt-2">Order Number: <strong>@ViewBag.orderNumber</strong></small>
+                            </div>
+                            <button onclick="window.location.href='/product'" class="btn btn-danger btn-block order-button">Keep Shopping</button>
+                        </div>
+                    </div>
+                    <div class="col-md-6 background-muted">
+                        <div class="p-3 border-bottom">
+                            <div class="d-flex justify-content-between align-items-center"> <span><i class="fa fa-clock text-muted"></i> 3 days delivery</span></div>
+                        </div>
+                        <div class="row g-0 border-bottom">
+                            <div class="col-md-6 border-right">
+                                <div class="p-3 d-flex justify-content-center align-items-center"> <span>X@(Model.Count())</span> </div>
+                            </div>
+
+                        </div>
+                        @{
+                            foreach (var item in Model)
+                            {
+                                int i = 0;
+                                <div class="row g-0 border-bottom">
+                                    <div class="col-md-6">
+                                        <div class="p-3 d-flex justify-content-center align-items-center"> <span>@i</span> </div>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <div class="p-3 d-flex justify-content-center align-items-center"> <span>$@item.Price</span> </div>
+                                    </div>
+                                </div>
+                                i++;
+                            }
+                        }
+
+                        <div class="row g-0 border-bottom">
+                            <div class="col-md-6">
+                                <div class="p-3 d-flex justify-content-center align-items-center"> <span>Processing fees</span> </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="p-3 d-flex justify-content-center align-items-center"> <span>$1.80</span> </div>
+                            </div>
+                        </div>
+                        <div class="row g-0">
+                            <div class="col-md-6">
+                                <div class="p-3 d-flex justify-content-center align-items-center"> <span class="font-weight-bold">Total</span> </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="p-3 d-flex justify-content-center align-items-center"> <span class="font-weight-bold">$@((Model.Sum(p => p.Price))+(decimal)1.80)</span> </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div> </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+@*<h2>Order Details</h2>
+    <h4>Order submitted succssusfully and order number is @ViewBag.orderNumber</h4>*@
+

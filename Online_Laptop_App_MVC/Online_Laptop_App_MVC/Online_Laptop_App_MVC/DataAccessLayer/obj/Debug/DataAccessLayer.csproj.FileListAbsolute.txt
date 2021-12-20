@@ -1,0 +1,17 @@
+C:\Users\aalbugami\Documents\Online_Laptop_App_MVC\DataAccessLayer\bin\Debug\DataAccessLayer.dll
+C:\Users\aalbugami\Documents\Online_Laptop_App_MVC\DataAccessLayer\bin\Debug\DataAccessLayer.pdb
+C:\Users\aalbugami\Documents\Online_Laptop_App_MVC\DataAccessLayer\obj\Debug\DataAccessLayer.csproj.CoreCompileInputs.cache
+C:\Users\aalbugami\Documents\Online_Laptop_App_MVC\DataAccessLayer\obj\Debug\DataAccessLayer.dll
+C:\Users\aalbugami\Documents\Online_Laptop_App_MVC\DataAccessLayer\obj\Debug\DataAccessLayer.pdb
+C:\Users\svqxk\Downloads\Online_Laptop_App_MVC\Online_Laptop_App_MVC\DataAccessLayer\bin\Debug\DataAccessLayer.dll
+C:\Users\svqxk\Downloads\Online_Laptop_App_MVC\Online_Laptop_App_MVC\DataAccessLayer\bin\Debug\DataAccessLayer.pdb
+C:\Users\svqxk\Downloads\Online_Laptop_App_MVC\Online_Laptop_App_MVC\DataAccessLayer\obj\Debug\DataAccessLayer.csproj.AssemblyReference.cache
+C:\Users\svqxk\Downloads\Online_Laptop_App_MVC\Online_Laptop_App_MVC\DataAccessLayer\obj\Debug\DataAccessLayer.csproj.CoreCompileInputs.cache
+C:\Users\svqxk\Downloads\Online_Laptop_App_MVC\Online_Laptop_App_MVC\DataAccessLayer\obj\Debug\DataAccessLayer.dll
+C:\Users\svqxk\Downloads\Online_Laptop_App_MVC\Online_Laptop_App_MVC\DataAccessLayer\obj\Debug\DataAccessLayer.pdb
+F:\Abuslo7\Online_Laptop_App_MVC\Online_Laptop_App_MVC\Online_Laptop_App_MVC\DataAccessLayer\bin\Debug\DataAccessLayer.dll
+F:\Abuslo7\Online_Laptop_App_MVC\Online_Laptop_App_MVC\Online_Laptop_App_MVC\DataAccessLayer\bin\Debug\DataAccessLayer.pdb
+F:\Abuslo7\Online_Laptop_App_MVC\Online_Laptop_App_MVC\Online_Laptop_App_MVC\DataAccessLayer\obj\Debug\DataAccessLayer.csproj.CoreCompileInputs.cache
+F:\Abuslo7\Online_Laptop_App_MVC\Online_Laptop_App_MVC\Online_Laptop_App_MVC\DataAccessLayer\obj\Debug\DataAccessLayer.dll
+F:\Abuslo7\Online_Laptop_App_MVC\Online_Laptop_App_MVC\Online_Laptop_App_MVC\DataAccessLayer\obj\Debug\DataAccessLayer.pdb
+F:\Abuslo7\Online_Laptop_App_MVC\Online_Laptop_App_MVC\Online_Laptop_App_MVC\DataAccessLayer\obj\Debug\DataAccessLayer.csproj.AssemblyReference.cache
